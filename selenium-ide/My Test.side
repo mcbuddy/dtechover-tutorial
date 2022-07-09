@@ -1,0 +1,79 @@
+{
+  "id": "9de01b9e-6702-4f28-8756-ed817be9fafc",
+  "version": "2.0",
+  "name": "My Test",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "2779cb87-a11e-4cbd-bb89-21499a8ef1b8",
+    "name": "First Test",
+    "commands": [{
+      "id": "b0140cc2-f07b-4daf-9031-125d9ee92266",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddd52d7e-2ec6-4765-aecb-47102cc0eb05",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1057",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b973079a-3798-4ef6-a245-af8f76ba8cdd",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Indonesia"
+    }, {
+      "id": "ce9c1680-7410-4164-83d5-59a2e722592b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "af6bad4e-3528-4810-a3df-a7946f77485d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=center_col",
+      "targets": [
+        ["id=center_col", "id"],
+        ["css=#center_col", "css:finder"],
+        ["xpath=//div[@id='center_col']", "xpath:attributes"],
+        ["xpath=//div[@id='rcnt']/div", "xpath:idRelative"],
+        ["xpath=//div[10]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e9e013b-35e7-4723-891d-1c0044bbc8b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [],
+      "value": "Indonesia - Wikipedia"
+    }]
+  }],
+  "suites": [{
+    "id": "990a5e06-a23e-4490-995d-e912aa3bdf6d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2779cb87-a11e-4cbd-bb89-21499a8ef1b8"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
